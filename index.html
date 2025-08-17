@@ -3,76 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horseasy - Coming Soon</title>
+    <title>Horseasy</title>
     <style>
-        body {
+        * {
             margin: 0;
-            padding: 20px;
-            font-family: Arial, sans-serif;
-            background-color: #fafafa;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html, body {
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        body {
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            background-color: #f0f0f0;
         }
         
-        .container {
-            max-width: 800px;
-            text-align: center;
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
-        }
-        
-        .landing-image {
-            max-width: 100%;
+        .full-image {
+            max-width: 100vw;
+            max-height: 100vh;
+            width: auto;
             height: auto;
-            margin-bottom: 20px;
+            object-fit: contain;
         }
         
-        .launch-text {
-            font-size: 24px;
-            color: #1B4332;
-            margin: 30px 0;
-            font-weight: bold;
-        }
-        
-        .contact-text {
-            font-size: 18px;
-            color: #666;
-            margin: 20px 0;
-        }
-        
-        .footer {
-            margin-top: 40px;
-            font-size: 14px;
-            color: #666;
-        }
-        
-        @media (max-width: 600px) {
-            .container {
-                padding: 20px;
-                margin: 10px;
-            }
-            
-            .launch-text {
-                font-size: 20px;
+        @media (max-width: 768px) {
+            .full-image {
+                width: 100vw;
+                height: auto;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="horseasy-landing.png" alt="Horseasy Coming Soon" class="landing-image">
-        
-        <p class="launch-text">Coming Soon</p>
-        
-        <p class="contact-text">The complete horse management app for riders, owners, and barn managers.</p>
-        
-        <div class="footer">
-            <p>Expected Launch: Spring 2025</p>
-        </div>
-    </div>
+    <img src="horseasy-landing.png" alt="Horseasy" class="full-image">
 </body>
 </html>
