@@ -13,33 +13,28 @@
         
         html, body {
             height: 100%;
+            width: 100%;
             overflow: hidden;
         }
         
         body {
+            background: none;
             display: flex;
-            justify-content: center;
             align-items: center;
-            background-color: #f0f0f0;
+            justify-content: center;
         }
         
-        .full-image {
-            max-width: 100vw;
-            max-height: 100vh;
-            width: auto;
-            height: auto;
-            object-fit: contain;
-        }
-        
-        @media (max-width: 768px) {
-            .full-image {
-                width: 100vw;
-                height: auto;
-            }
+        .full-screen-image {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            position: fixed;
+            top: 0;
+            left: 0;
         }
     </style>
 </head>
 <body>
-    <img src="horseasy-landing.png" alt="Horseasy" class="full-image">
+    <img src="horseasy-landing.png" alt="Horseasy" class="full-screen-image">
 </body>
 </html>
